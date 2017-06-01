@@ -1,11 +1,16 @@
 # coding=utf-8
 from __future__ import absolute_import
+from octoprint_m4c0_aws_tools.temperature_probe import temperature_probe
 
 import octoprint.plugin
 
 class m4c0_aws_tools_plugin(octoprint.plugin.SettingsPlugin,
                             octoprint.plugin.AssetPlugin,
                             octoprint.plugin.TemplatePlugin):
+
+	def initialize(self):
+		probe = temperature_probe()
+		self._printer.register_callback(probe)
 
 	##~~ SettingsPlugin mixin
 
