@@ -5,7 +5,7 @@
  * License: AGPLv3
  */
 $(function() {
-    function M4c0-aws-toolsViewModel(parameters) {
+    function view_model(parameters) {
         var self = this;
 
         // assign the injected parameters, e.g.:
@@ -17,7 +17,7 @@ $(function() {
 
     // view model class, parameters for constructor, container to bind to
     OCTOPRINT_VIEWMODELS.push([
-        M4c0-aws-toolsViewModel,
+        view_model,
 
         // e.g. loginStateViewModel, settingsViewModel, ...
         [ /* "loginStateViewModel", "settingsViewModel" */ ],
