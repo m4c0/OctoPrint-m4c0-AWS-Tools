@@ -1,0 +1,4 @@
+include README.md
+recursive-include octoprint_m4c0_aws_tools/templates *
+recursive-include octoprint_m4c0_aws_tools/translations *
+recursive-include octoprint_m4c0_aws_tools/static *
